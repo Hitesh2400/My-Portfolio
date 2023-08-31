@@ -122,7 +122,7 @@
                         <p>The Website helps you to generate different meals for You. Along with
                             Recipes and Video Tutorials.
                         </p>
-                        <a href="https://hitesh2400.github.io/Meal-Planner-Project---Javascript-Project---zefcj5hrbesz/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://hitesh2400.github.io/Meal-Planner-Project---Javascript-Project---zefcj5hrbesz/" target="_blank" class="link-opener"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -149,9 +149,9 @@
                     <p><i class="fa-solid fa-paper-plane"></i> bhanjhitesh619@gmail.com</p>
                     <p><i class="fa-solid fa-square-phone"></i> 7044072400</p>
                     <div class="social-icons">
-                        <a href="https://github.com/Hitesh2400" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                        <a href="https://www.instagram.com/i_hitesh_ranjan_619/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://wa.me/917044072400"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/Hitesh2400" target="_blank" class="link-opener"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/i_hitesh_ranjan_619/" target="_blank" class="link-opener"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/917044072400" target="_blank" class="link-opener"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                     <a href="Hitesh Bhanj.pdf" download class="btn btn2">Download CV</a> 
                 </div>
@@ -214,6 +214,11 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+
+    $$('.link-link-opener').click(function(e) {
+        e.preventDefault();
+        setTimeout(function(url) { window.location = url }, 5000, this.href);
+    });
   </script>
 </body>
 </html>
